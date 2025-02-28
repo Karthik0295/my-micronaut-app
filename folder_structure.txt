@@ -1,0 +1,35 @@
+.
+├── build
+│   ├── classes
+│   │   └── java
+│   ├── generated
+│   │   └── sources
+│   ├── native
+│   │   └── agent-output
+│   ├── reports
+│   │   ├── inspectRuntimeClasspath.txt
+│   │   └── problems
+│   ├── resources
+│   │   └── main
+│   └── tmp
+│       └── compileJava
+├── build.gradle.kts
+├── folder_structure.txt
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── micronaut-cli.yml
+├── README.md
+├── settings.gradle.kts
+└── src
+    ├── main
+    │   ├── java
+    │   └── resources
+    └── test
+        └── java
+
+22 directories, 11 files
