@@ -1,21 +1,73 @@
-## Micronaut 4.7.6 Documentation
+# My Micronaut App
 
-- [User Guide](https://docs.micronaut.io/4.7.6/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.7.6/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.7.6/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+This is a simple Micronaut project with Swagger integration.
 
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-- [Micronaut Gradle Plugin documentation](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/)
-- [GraalVM Gradle Plugin documentation](https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html)
-## Feature serialization-jackson documentation
+## Prerequisites
 
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
+Before running this project on a new system, ensure you have the following installed:
+
+1. **Java 17**  
+   - Download and install from: https://jdk.java.net/17/
+
+2. **Gradle (Recommended: 8.11.1 or higher)**  
+   - Download and install from: https://gradle.org/install/
+
+3. **Git** (to clone the repository)  
+   - Download and install from: https://git-scm.com/downloads
+
+## Setup Instructions
+
+Follow these steps to set up and run the project:
+
+1. **Clone the Repository**  
+
+   git clone https://github.com/Karthik0295/my-micronaut-app.git
+   cd develop
+
+2. **Verify Java and Gradle Installation**  
+
+   java -version
+   gradle -v
 
 
-## Feature micronaut-aot documentation
+3. **Clean, Build and Run the Project**  
+    ./gradlew clean
+    ./gradlew build
+    ./gradlew run
 
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
 
 
+4. **Build the Project**  
+
+   ./gradlew build
+
+
+
+## Project Structure
+
+```
+my-micronaut-app/
+├── src/
+│   ├── main/
+│   │   ├── java/my/micronaut/app/
+│   │   │   ├── Application.java
+│   │   │   ├── HelloController.java
+│   │   ├── resources/
+│   │       ├── application.yml
+│   │       ├── logback.xml
+├── build.gradle.kts
+├── settings.gradle.kts
+├── README.md
+```
+
+## Troubleshooting
+
+- If you encounter a `permission denied` error while running Gradle commands, try:  
+  ```sh
+  chmod +x gradlew
+  ./gradlew run
+  ```
+
+- If the application does not start, check the logs and ensure Java 17 is installed correctly.
+
+For further support, check the [Micronaut Documentation](https://micronaut.io/documentation.html).
