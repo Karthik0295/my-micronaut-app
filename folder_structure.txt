@@ -1,24 +1,47 @@
 .
 ├── build
-│   ├── classes
-│   │   └── java
-│   ├── generated
-│   │   └── sources
-│   ├── native
-│   │   └── agent-output
-│   ├── reports
-│   │   ├── inspectRuntimeClasspath.txt
-│   │   └── problems
-│   ├── resources
-│   │   └── main
-│   └── tmp
-│       └── compileJava
+│   ├── classes
+│   │   └── java
+│   │       └── main
+│   │           ├── META-INF
+│   │           │   └── micronaut
+│   │           │       └── io.micronaut.inject.BeanDefinitionReference
+│   │           │           └── my.micronaut.app.$HelloController$Definition
+│   │           └── my
+│   │               └── micronaut
+│   │                   └── app
+│   │                       ├── $HelloController$Definition$Exec.class
+│   │                       ├── $HelloController$Definition.class
+│   │                       ├── Application.class
+│   │                       └── HelloController.class
+│   ├── generated
+│   │   └── sources
+│   │       ├── annotationProcessor
+│   │       │   └── java
+│   │       │       └── main
+│   │       └── headers
+│   │           └── java
+│   │               └── main
+│   ├── native
+│   │   └── agent-output
+│   │       └── run
+│   ├── reports
+│   │   ├── inspectRuntimeClasspath.txt
+│   │   └── problems
+│   │       └── problems-report.html
+│   ├── resources
+│   │   └── main
+│   │       ├── application.properties
+│   │       └── logback.xml
+│   └── tmp
+│       └── compileJava
+│           └── previous-compilation-data.bin
 ├── build.gradle.kts
 ├── folder_structure.txt
 ├── gradle
-│   └── wrapper
-│       ├── gradle-wrapper.jar
-│       └── gradle-wrapper.properties
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
 ├── gradle.properties
 ├── gradlew
 ├── gradlew.bat
@@ -27,9 +50,18 @@
 ├── settings.gradle.kts
 └── src
     ├── main
-    │   ├── java
-    │   └── resources
+    │   ├── java
+    │   │   └── my
+    │   │       └── micronaut
+    │   │           └── app
+    │   │               ├── Application.java
+    │   │               └── HelloController.java
+    │   └── resources
+    │       ├── application.properties
+    │       └── logback.xml
     └── test
         └── java
-
-22 directories, 11 files
+            └── my
+                └── micronaut
+                    └── app
+                        └── MyMicronautAppTest.java
