@@ -1,6 +1,6 @@
 # My Micronaut App
 
-This is a simple Micronaut project with Swagger integration.
+This is a simple Micronaut project Setup.
 
 ## Prerequisites
 
