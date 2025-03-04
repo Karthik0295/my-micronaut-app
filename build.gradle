@@ -16,6 +16,12 @@ dependencies {
     implementation("io.micronaut:micronaut-jackson-databind")
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
+
+    //aws
+
+    implementation("io.micronaut.aws:micronaut-aws-sdk-v2")
+    implementation("software.amazon.awssdk:s3")
+    implementation("software.amazon.awssdk:dynamodb")
 }
 
 
